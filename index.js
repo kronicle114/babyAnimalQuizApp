@@ -26,22 +26,22 @@ function buildQuizForm () {
         <input type="radio" value="${STORE[currentNumber].answers[0]}" name="answer" required>
         <span>${STORE[currentNumber].answers[0]}</span>
         </label>
-        
+
         <label class="answerOption">
         <input type="radio" value="${STORE[currentNumber].answers[1]}" name="answer" required>
         <span>${STORE[currentNumber].answers[1]}</span>
         </label>
-        
+
         <label class="answerOption">
         <input type="radio" value="${STORE[currentNumber].answers[2]}" name="answer" required>
         <span>${STORE[currentNumber].answers[2]}</span>
         </label>
-        
+
         <label class="answerOption">
         <input type="radio" value="${STORE[currentNumber].answers[3]}" name="answer" required>
         <span>${STORE[currentNumber].answers[3]}</span>
         </label>
-        
+
         <button type="submit" class="submitButton">Submit</button>
         </fieldset>
         </form>
@@ -163,7 +163,7 @@ function renderResults () {
         $('.quizForm').html(`
             <div class="summary">
             <h3>Baby animal expert alert!</h3>
-            <img src="LeoCheers.gif" alt="Leonardo DiCaprio toasting animation gif"/>
+            <img src="https://media.giphy.com/media/5IMcyqKbkg0O4/giphy.gif" alt="Leonardo DiCaprio toasting animation gif"/>
             <p>You got ${score} / 10</p>
             <p>You must be a pro. Cheers!</p>
             <button class="restartButton">Restart Quiz</button>
@@ -189,4 +189,3 @@ function buildQuiz () {
 
 //invoke all quiz functions
 buildQuiz();
-
