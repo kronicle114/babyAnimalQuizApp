@@ -143,7 +143,7 @@ function renderResults () {
         $('.quizForm').html(`
             <div class="summary">
             <h3>Baby animal expert alert!</h3>
-            <img src="LeoCheers.gif" alt="Leonardo DiCaprio toasting animation gif"/>
+            <img src="https://media.giphy.com/media/5IMcyqKbkg0O4/giphy.gif" alt="Leonardo DiCaprio toasting animation gif"/>
             <p>You got ${score} / 10</p>
             <p>You must be a pro. Cheers!</p>
             <button class="restartButton">Restart Quiz</button>
@@ -162,10 +162,10 @@ function renderResults () {
     } else {
         $('.quizForm').html(`
             <div class="summary">
-            <h3>Baby animal expert alert!</h3>
-            <img src="https://media.giphy.com/media/5IMcyqKbkg0O4/giphy.gif" alt="Leonardo DiCaprio toasting animation gif"/>
+            <h3>Baby animals just isn't your thing...</h3>
+            <img src="TryAgain.webp" alt="A woman telling you to try again gif"/>
             <p>You got ${score} / 10</p>
-            <p>You must be a pro. Cheers!</p>
+            <p>Maybe you should try again!</p>
             <button class="restartButton">Restart Quiz</button>
             </div>`
             );
