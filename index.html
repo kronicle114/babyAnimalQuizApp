@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Baby Animal Quiz App</title>
+            <meta name="description" content="Test your baby animal knowledge">
+                
+                <!-- Responsive viewport tag, tells small screens that it's responsive -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    
+                    <!-- Normalize.css, a cross-browser reset file -->
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+                        
+                        <!-- Google Font -->
+                        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+                            
+                            <!-- Stylesheets -->
+                            <link rel="stylesheet" href="floating-grid.css" />
+                            <link rel="stylesheet" href="main.css" />
+                            </head>
+    
+    <body>
+        <!-- User is notified at all times their score and currentQuestion number -->
+        <header role="banner">
+            <div class="progress">
+                <ul>
+                    <li><b>Question:</b> <span class="currentNumber">0</span>/10</li>
+                    <li><b>Score:</b> <span class="score">0</span></li>
+                </ul>
+            </div>
+        </header>
+        <main role="main" class="row">
+            <!-- User will be able to click on the startButton to initiate the quiz
+             -->
+            <div class="startQuiz">
+                <h1>Can you guess what these baby animals are called?</h1>
+                <img src="https://images.unsplash.com/photo-1534996367885-1c10e3e890be?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85c1e4b41e23d972a752c5a9e99ff6cc&auto=format&fit=crop&w=1087&q=80" alt="Mommy and baby elephant image">
+                    <button class="startButton">Start</button>
+                    </div>
+            <!-- quizForm contains the question & answers. When the page loads, quizForm's default is display:none. JS unhides the div when startButton is clicked -->
+            <div class="quizForm"></div>
+        </main>
+        
+        <!-- Script start -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="datastore.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
