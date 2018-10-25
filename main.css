@@ -117,8 +117,8 @@ input[type=radio] {
 
 @media screen and (max-width: 1920px) {
     main {
-        width: 60%;
-        height: 100%;
+        width: 10%;
+        height: auto%;
         margin: 0 auto;
     }
     h1 {
@@ -133,11 +133,11 @@ input[type=radio] {
         margin: 0 auto;
     }
     .correctIcon {
-        width: 60%;
+        width: 40%;
         height: auto;
     }
     .wrongIcon {
-        width: 60%;
+        width: 40%;
         height: auto;
     }
     .restartButton {
@@ -148,7 +148,7 @@ input[type=radio] {
 }
 @media screen and (max-width: 768px) {
     main {
-        width: 80%;
+        width: 50%;
         height: 100%;
         margin: 0 auto;
     }

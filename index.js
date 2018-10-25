@@ -6,10 +6,10 @@ let score = 0;
 // When startButton is clicked hide startQuiz div & unhide quizForm div
 function startQuiz() {
     $(".startButton").click(function(){
-        $('.startQuiz').hide();
-        $(".quizForm").show();
-        $('.currentNumber').text(1);
-        });
+    $('.startQuiz').hide();
+    $(".quizForm").show();
+    $('.currentNumber').text(1);
+    });
 }
 
 //The function below defines the html of the quizForm
@@ -22,6 +22,7 @@ function buildQuizForm () {
         </div>
         <form>
         <fieldset>
+        <legend>${STORE[currentNumber].title}</legend>
         <label class="answerOption">
         <input type="radio" value="${STORE[currentNumber].answers[0]}" name="answer" required>
         <span>${STORE[currentNumber].answers[0]}</span>
