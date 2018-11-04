@@ -16,7 +16,7 @@ h1 {
 
 ul li {
     font-size: 1rem;
-    color: white;
+    color: black;
     text-decoration: none;
     list-style: none;
     display: inline-block;
@@ -42,7 +42,7 @@ button {
     width: 25%;
     padding: 10px;
     background-color: rgba(83, 22, 22, 0.53);
-    color: white;
+    color: black;
 }
 
 button:hover {
